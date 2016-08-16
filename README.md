@@ -2,6 +2,9 @@
 
 This is a very lightweight plugin that allows wordpress users to embed the wheelbase checkout app into their site.
 
+## Installation
+Zip up the `wheelbase-shortcode.php` file and upload it to the plugins directory for the customer.  Alternatively, they can upload it through the plugins interface in their Wordpress dashboard.
+
 ## Embedding full shop
 
 Creates a searchable interface on the page.
@@ -19,7 +22,11 @@ Allows you to view availability, select addons and make a reservation for a sing
 ```
 
 ## Options
-In addition to the basic install, you can also specify a color that becomes the accent/button color on the shop pages
+In addition to the basic install, here are some extra settings
+
+### Color
+
+Set the accent and button color used throughout the checkout process
 
 ```
 [wheelbase rental="1916" color="000000"]
