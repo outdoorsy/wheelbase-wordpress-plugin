@@ -22,11 +22,14 @@
 
   // [wheelbase owner="id" rental="rental-id" color="000000"]
   function wheelbase_func( $atts ) {
-    if ($atts["rental"]) {
-      return "<div id='outdoorsy-book-now-container' data-rental='" . $atts["rental"] . "' data-color='" . $atts["color"] . "'></div>";
-    } else {
-      return "<div id='outdoorsy-book-now-container' data-owner='" . $atts["owner"] . "' data-color='" . $atts["color"] . "'></div>";
+
+    $response = "";
+
+    foreach ($atts as $key => $value)  {
+      $response = $response . "data-" . $key . "='" . $value . "' ";
     }
+    return "<div id='outdoorsy-book-now-container' " . $response . "></div>";
   }
+
   add_shortcode( 'wheelbase', 'wheelbase_func' );
 ?>
